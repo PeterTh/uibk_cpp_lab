@@ -1,0 +1,14 @@
+digraph {
+    node [shape=box style=filled fillcolor=lightblue fontname="Roboto Mono" fontsize=12 ];
+    edge [style=dashed arrowhead=onormal];
+
+    app;
+    foo [label="libFoo.so"];
+    bar [label="libBar.so"];
+    baz [label="libBaz.so"];
+
+    app -> foo;
+    app -> bar;
+    app -> baz;
+    baz -> bar;
+}

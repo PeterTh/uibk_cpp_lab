@@ -43,3 +43,63 @@ It depends on all three libraries.
 
 CMake itself is a build system generator.
 You can choose from a variety of target build systems.
+
+## Task 04
+
+Examine the program [`iterations.cpp`](task04/iterations.cpp) and think about the expected output.
+Compile the program and run it.
+What do you notice?
+Did you expect this behaviour?
+Did you get any compiler warnings?
+Investigate what is actually happening (consider using `valgrind` or a debugger).
+
+How can such errors be prevented?
+Look for tools (e.g. static code analysers) which help discovering such faulty code.
+
+**Note:** If you run the executable and everything seems normal, try changing the initial content of `xs`, using different optimisation flags, or a different compiler.
+The actual behaviour of this executable depends on various factors.
+
+See [Iterator Invalidation](https://en.cppreference.com/w/cpp/container#Iterator_invalidation).
+
+## Task 05
+
+You are given the program [`strange.cpp`](task05/strange.cpp).
+Compile it with different compilers and optimisation flags.
+What do you notice?
+What is really happening here?
+
+See [Undefined Behaviour](https://en.cppreference.com/w/cpp/language/ub) and [Defining the undefinedness of C](https://dl.acm.org/citation.cfm?id=2737979).
+
+## Task 06
+
+This task focuses on the correct implementation of RAII as well as copy and move semantics.
+You are asked to implement the concept of `unique_ptr` and `shared_ptr`.
+Since we won't concern ourselves with templates for the moment your implementation will *own* an instance of the following `struct`.
+
+```cpp
+struct Vec2 {
+    float x, y;
+};
+```
+
+- Read the documentation regarding *smart pointers*, `unique_ptr`, and `shared_ptr`
+- Implement your version of `unique_ptr_to_vec2` and `shared_ptr_to_vec2` fulfilling these requirements:
+  - *Dynamically* allocate an instance of `Vec2` in your constructor
+  - De-allocate the `Vec2` instance in your destructor
+  - Implement correct copy semantics (copy constructor / copy assignment)
+  - Implement correct move semantics (move constructor / move assignment)
+  - Enable access to `Vec2` via the operators `*` and `->`
+  - Thread-safety for `shared_ptr_to_vec2`'s reference counter is not required
+  - Pay attention to corner-cases like self-assignment (`v = v`)
+- Prepare a few interesting test cases
+- Check your implementation for memory leaks and memory corruptions using `valgrind` and sanitizers
+
+See [Rule of Three](https://en.wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming)).
+
+## Task 07
+
+Read [this blog post](https://www.gamedev.net/blogs/entry/2265481-oop-is-dead-long-live-oop).
+
+- Pay attention to *implementation vs. interface inheritance*
+- Pay attention to the use of templates (assuming you've already covered them)
+    - Think about the benefits and drawbacks of the used patterns

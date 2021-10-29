@@ -103,3 +103,46 @@ Read [this blog post](https://www.gamedev.net/blogs/entry/2265481-oop-is-dead-lo
 - Pay attention to *implementation vs. interface inheritance*
 - Pay attention to the use of templates (assuming you've already covered them)
     - Think about the benefits and drawbacks of the used patterns
+
+## Task 08
+
+You are given the following definition of a person:
+
+```cpp
+struct Person {
+    std::string firstname;
+    std::string lastname;
+    int age;
+};
+```
+
+- Implement relational operators (`<`, `<=`, `>`, `>=`)
+- Implement comparison operators (`==`, `!=`)
+
+Next, create 5 different instances and put all of them
+- in an `std::vector`;
+- in an `std::set`; and
+- in an `std::map` as key (we don't care about the value type of the map).
+
+Use algorithms from the standard library, like `std::find` and `std::partition` on these containers and examine which operators are used.
+
+**Hint:** You may want to have a look at `std::tie`.
+
+## Task 09
+
+Reuse `Person` from Task 08 and implement the necessary parts for inserting it into an `std::unordered_set`.
+
+Compare the performance of:
+
+- `std::vector`
+- `std::list`
+- `std::set`
+- `std::unordered_set`
+
+## Task 10
+
+Have a look at [this](https://bollu.github.io/mathemagic/declarative/index.html).
+Now, do that in C++!
+
+Utilize lambdas, `std::function`, and/or structs with call operators.
+Critically think about ownership and minimize the amount of heap allocations.

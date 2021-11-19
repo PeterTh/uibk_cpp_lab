@@ -204,3 +204,50 @@ Write your function in different ways and compare the readability:
   - use `std::mem_fn`
 
 Think about taking the argument by value instead of taking it by const reference.
+
+## Task 14
+
+Implement your own version of `std::vector` without using any of the provided containers — use *regular arrays* (`new[]` / `delete[]`) to house your elements.
+The focus of this task lies on the use of templates and implementation of iterators.
+You do not have to concern yourself with custom allocators.
+
+Test your implementation with different types (`int`, `double`, and a custom struct).
+
+Take your vector from task 1 and implement iterators.
+You might want to read through the respective documentation.
+
+Write some tests utilising algorithms provided by the standard library to check if your iterators behave correctly.
+
+## Task 15
+
+Take your vector implementation from Task 14 and instantiate it with a big number of unique types.
+
+Inspect the relationship between the number of unique instantiates and compile time.
+Furthermore, look at the compiled object file using `nm`.
+
+## Task 16
+
+In this task you have to create a rudimentary plugin system.
+
+You are given `plugin.hpp` which contains an interface for your plugins, as well as the function name of the constructor function and its type.
+Note that the constructor function returns an `std::unique_ptr<Plugin>`.
+
+- create an executable which *dynamically* loads plugins and executes their `run` member function
+- create two different plugins (`foo` and `bar`) showing off the plugin system
+
+It could look like this:
+
+    $ ./main ./libFoo.so
+    Creation of first plugin
+    Running the first plugin
+    Destruction of first plugin
+
+    $ ./main ./libFoo.so ./libBar.so
+    Creation of first plugin
+    Running the first plugin
+    Destruction of first plugin
+    Creation of second plugin
+    Running the second plugin
+    Destruction of second plugin
+
+**Hint:** Have a look at the related man-pages *dlopen(3)* and *dlsym(3)*.

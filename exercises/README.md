@@ -293,3 +293,34 @@ using Vec3 = Vector<3>;
 ```
 
 **Note:** You are allowed to modify the given snippet as necessary.
+
+## Task 19
+
+Revisit the meta programming example from the lecture regarding `std::tuple`.
+
+Given the following class template:
+
+```cpp
+template <typename... Types>
+class type_set {};
+```
+
+`type_set` should behave like a set of types.
+The empty set would therefore be `type_set<>`, while the set containing the type `int` would be `type_set<int>`, so on and so forth.
+
+- Create a meta function `type_set_contains_v` which checks if a given `type_set` contains a given type.
+- Create a meta function `type_set_is_subset_v` which checks if a given `type_set` is a subset of another given `type_set`.
+- Create a meta function `type_set_is_same_v` which checks if a given `type_set` is equal to another given `type_set`.
+- Create a meta function `type_set_size_v` which tells the size of a given `type_set`.
+  For `type_set<int, int, float>` it should return 2.
+
+Try not to use any of the utilities provided by the standard library (like the example provided in the lecture).
+
+**Hint:** If you are struggling with this exercise you might want to have a look at how *fold* (i.e. *reduce*) is used in functional programming languages.
+
+## Task 20
+
+Revisit the *Advanced Template* slides.
+
+Go through the `has_print_to` example from the slides step by step.
+Explain all parts like it's done in the lecture.

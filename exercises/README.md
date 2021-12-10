@@ -324,3 +324,36 @@ Revisit the *Advanced Template* slides.
 
 Go through the `has_print_to` example from the slides step by step.
 Explain all parts like it's done in the lecture.
+
+## Task 21
+
+Take a look at [Boost Operators](https://www.boost.org/doc/libs/1_74_0/libs/utility/operators.htm).
+Try to understand *why* the *curiously recurring template pattern (CRTP)* is used.
+
+## Task 22
+
+You are given the code and build instructions for a shared library and an executable which uses the shared library.
+The shared library features two functions `random_number` and `just_a_print` inside the `foo` namespace.
+
+Your task is to create an *interceptor* library:
+
+- `random_number` should be replaced with a function that always returns `4` for improved determinism
+- `just_a_print` should be wrapped so that some text is printed before and after the original function is executed
+
+Running the executable with and without the interceptor library could look like this:
+
+```
+$ ./executable
+Random Number: 880806932
+
+Just a print to stdout, nothing else
+
+$ LD_PRELOAD=$PWD/interceptor.so ./executable
+Random Number: 4
+
+some text before
+Just a print to stdout, nothing else
+some text after
+```
+
+**Hint:** For Linux, have a look at the related man-pages, like *ld-linux(8)*.

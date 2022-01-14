@@ -357,3 +357,13 @@ some text after
 ```
 
 **Hint:** For Linux, have a look at the related man-pages, like *ld-linux(8)*.
+
+## Task 23
+
+Implement a simple calculator using either [imgui](https://github.com/ocornut/imgui), [Qt Widgets](https://doc.qt.io/qt-5/qtwidgets-index.html), [Qt Quick](https://doc.qt.io/qt-5/qtquick-index.html), or any other cross-platform GUI toolkit.
+
+For Qt Quick, the actual calculation needs to be implemented in C++ as we want to investigate the interaction between the toolkit and the C++ programming language.
+
+## Task 24
+
+Read through [*The 7 Tasks*](https://eugenkiss.github.io/7guis/tasks/) and implement the described tasks using one cross-platform GUI toolkit.

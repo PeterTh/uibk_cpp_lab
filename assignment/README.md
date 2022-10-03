@@ -1,6 +1,6 @@
 # Assignment
 
-*due on 19 February 2022*
+*due on 12th February 2023*
 
 For this assignment you can either pick one of the two provided specifications or come up with your own.
 Yes, you are free to come up with a topic for this assignment.

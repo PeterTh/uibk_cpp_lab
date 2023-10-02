@@ -1,6 +1,6 @@
 # Assignment
 
-*due on 12th February 2023*
+*due on February 11th, 2024*
 
 For this assignment you can either pick one of the two provided specifications or come up with your own.
 Yes, you are free to come up with a topic for this assignment.
@@ -9,7 +9,7 @@ The specification doesn't have to be bulletproof.
 But it must contain a bullet list of goals (with points to score) at the bottom which can be checked / evaluated.
 You can also adjust one of the provided specifications.
 
-You are allowed to work in teams, yet the team size has to correspond to the amount of work (features) of the topic.
+You are allowed to work in teams, and the team size has to correspond to the amount of work (features and their complexity) of the topic.
 For the provided specifications the recommended team size is 3.
 
 You are allowed to use:
@@ -52,9 +52,10 @@ Use the corresponding CMake `find_package` mechanism to find them.
 Prefer [`pkgconf`](https://cmake.org/cmake/help/latest/module/FindPkgConfig.html) over custom *FindPackage* scripts.
 For Windows you can simply ship pre-built libraries that are picked up by CMake automatically.
 
-You must use [CMake](https://cmake.org/) as build system.
-
-Use [ClangFormat](https://clgitang.llvm.org/docs/ClangFormat.html) to automatically format your code using the provided [`.clang-format`](../.clang-format) configuration.
+Some fixed constraints (you **must** adhere to these):
+ * Use git for version control.
+ * Use [CMake](https://cmake.org/) as build system.
+ * Use [ClangFormat](https://clgitang.llvm.org/docs/ClangFormat.html) to automatically format your code using the provided [`.clang-format`](../.clang-format) configuration.
 
 ## Team Composition + Specification
 
@@ -67,10 +68,13 @@ Use the following link:
 
 ### Packaging
 
-Assuming you are using Git to manage your code, please use the `git archive` command to package your project.
+Please use the `git archive` command to package your project.
 Use the following command, replacing `XX` with your team number (with leading zero, e.g. `02`).
 
     git archive --prefix=team_XX_assignment/ --format=zip HEAD > team_XX_assignment.zip
+
+If your archive is too large to send by email, you can host it somewhere and link it, but you have to
+ensure that the link is accessible and persistent.
 
 ### Build Test Submission
 

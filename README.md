@@ -9,15 +9,13 @@ Grading for the entire module is based on
 
 1. An exam covering the lecture.
 2. Completion of [the assignment](assignment).
-3. Weekly participation in the discussion of smaller [`exercises`](exercises).
+3. Weekly participation in the presentation of assignment progress, and its discussion.
 
 ## Exercises
 
 These exercises support the lecture and explore certain auxiliary topics relevant to C++.
-You are encouraged to solve (or at least think about) these exercises and participate in the weekly discussions. 
+You are encouraged to solve (or at least think about) these exercises.  
 You will not submit a solution as these exercises are optional, but feel free to ask questions when running into problems.
-
-The [`exercises`](exercises) folder will be updated throughout the semester.
 
 ## C++ Related Questions
 
@@ -27,17 +25,9 @@ You can use [Compiler Explorer](https://compiler-explorer.com/) and its short li
 
 ## Essential References
 
-- [C++ 17 Standard (Draft)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf)
+- [C++ 23 Standard (Draft)](https://timsong-cpp.github.io/cppwp/n4950/)
 - [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 - [cppreference.com](http://en.cppreference.com)
-
-## 🎥 Talks
-
-- [CppCon 2018 — *Simplicity: Not Just For Beginners*](https://www.youtube.com/watch?v=n0Ak6xtVXno)
-- [CppCon 2019 — *Naming is Hard: Let's Do Better*](https://www.youtube.com/watch?v=MBRoCdtZOYg)
-- [CppCon 2015 — *Give me 15 minutes & I'll change your view of GDB*](https://www.youtube.com/watch?v=PorfLSr3DDI)
-- [CppCon 2018 — *OOP is dead, long live Data-oriented design*](https://www.youtube.com/watch?v=yy8jQgmhbAU)
-- [CppCon 2014 — *Back to the Basics! Essentials of Modern C++ Style*](https://www.youtube.com/watch?v=xnqTKD8uD64)
 
 ## Useful References / Tools
 

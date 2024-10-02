@@ -1,6 +1,6 @@
 # Assignment
 
-*due on February 11th, 2024*
+*due on February 13th, 2025*
 
 For this assignment you can either pick one of the two provided specifications or come up with your own.
 Yes, you are free to come up with a topic for this assignment.

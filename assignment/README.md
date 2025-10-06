@@ -1,6 +1,6 @@
 # Assignment
 
-*due on February 13th, 2025*
+*due on February 13th, 2026*
 
 For this assignment you can either pick one of the two provided specifications or come up with your own.
 Yes, you are free to come up with a topic for this assignment.
@@ -13,7 +13,7 @@ You are allowed to work in teams, and the team size has to correspond to the amo
 For the provided specifications the recommended team size is 3.
 
 You are allowed to use:
-- C++ standard library (C++17 standard)
+- C++ standard library
 - C standard library (as fallback)
 - [Boost](https://www.boost.org/)
 - [SDL](https://www.libsdl.org/)
@@ -46,7 +46,7 @@ You are allowed to use:
 
 Feel free to ask me about other libraries / tools.
 
-Your application should work either on Linux (64-Bit) or Windows (64-Bit), preferably both unless there is a specific reason why it cannot be cross-platform.
+Your application should work on Linux (64-Bit) and Windows (64-Bit), unless there is a specific reason why it cannot be cross-platform.
 For Linux, assume a recent version of Ubuntu Desktop and that the required dependencies are installed via the system's package manager.
 Use the corresponding CMake `find_package` mechanism to find them.
 Prefer [`pkgconf`](https://cmake.org/cmake/help/latest/module/FindPkgConfig.html) over custom *FindPackage* scripts.

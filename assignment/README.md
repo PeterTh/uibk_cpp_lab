@@ -1,6 +1,6 @@
 # Assignment
 
-*due on February 13th, 2026*
+*due on July 6th, 2026*
 
 For this assignment you can either pick one of the two provided specifications or come up with your own.
 Yes, you are free to come up with a topic for this assignment.
@@ -9,8 +9,8 @@ The specification doesn't have to be bulletproof.
 But it must contain a bullet list of goals (with points to score) at the bottom which can be checked / evaluated.
 You can also adjust one of the provided specifications.
 
-You are allowed to work in teams, and the team size has to correspond to the amount of work (features and their complexity) of the topic.
-For the provided specifications the recommended team size is 3.
+You are required to work in teams, and the team size has to correspond to the amount of work (features and their complexity) of the topic.
+The provided specifications correspond to a team size of 3.
 
 You are allowed to use:
 - C++ standard library
@@ -47,15 +47,12 @@ You are allowed to use:
 Feel free to ask me about other libraries / tools.
 
 Your application should work on Linux (64-Bit) and Windows (64-Bit), unless there is a specific reason why it cannot be cross-platform.
-For Linux, assume a recent version of Ubuntu Desktop and that the required dependencies are installed via the system's package manager.
-Use the corresponding CMake `find_package` mechanism to find them.
-Prefer [`pkgconf`](https://cmake.org/cmake/help/latest/module/FindPkgConfig.html) over custom *FindPackage* scripts.
-For Windows you can simply ship pre-built libraries that are picked up by CMake automatically.
 
 Some fixed constraints (you **must** adhere to these):
  * Use git for version control.
- * Use [CMake](https://cmake.org/) as build system.
+ * Use [CMake](https://cmake.org/) as the build system.
  * Use [ClangFormat](https://clgitang.llvm.org/docs/ClangFormat.html) to automatically format your code using the provided [`.clang-format`](../.clang-format) configuration.
+ * Use [vcpkg](https://vcpkg.io) for package management.
 
 ## Team Composition + Specification
 
@@ -66,15 +63,9 @@ Use the following link:
 
 ## Submission
 
-### Packaging
-
-Please use the `git archive` command to package your project.
-Use the following command, replacing `XX` with your team number (with leading zero, e.g. `02`).
-
-    git archive --prefix=team_XX_assignment/ --format=zip HEAD > team_XX_assignment.zip
-
-If your archive is too large to send by email, you can host it somewhere and link it, but you have to
-ensure that the link is accessible and persistent.
+Submission works by giving me access to your git repository, and **tagging a version**.
+Include the tag I should check with each submission.
+If your git repo is private, include an invitation with your email.
 
 ### Build Test Submission
 
@@ -87,9 +78,23 @@ Use the following link, again replacing `XX` with your team number.
 
 ### Final Submission
 
-Verify that the packaged version is working.
+Verify that the tagged version is working.
 Use the following link, again replacing `XX` with your team number.
 
 Include your specification in the package, even if it was initially provided with the course material.
+Also include a file **contributions.md** that succinctly lists, for each team member, their core contributions, with file references for the top 3.
+E.g.:
+
+**Peter Thoman**:
+
+- Enemy combat AI - `src/enemies/combat_ai.[hpp/cpp]`
+- Inventory management - `src/core/inventory.[hpp/cpp]`, `src/ui/inventory.[hpp/cpp]`
+- ECS dispatch - `src/ecs/ecs.cpp:250-500`
+- Minimap
+- Sound effects
+
+**John Doe**:
+
+- ...
 
 📧 [send email](mailto:peter.thoman@uibk.ac.at?subject=703333%20-%20Team%20XX%20Assignment%20Final)

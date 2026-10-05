@@ -1,16 +1,14 @@
 # Assignment
 
-*due on July 6th, 2026*
+*due on February 6th, 2027*
 
 For this assignment you can either pick one of the two provided specifications or come up with your own.
-Yes, you are free to come up with a topic for this assignment.
-However, doing so requires you to put together a specification similar to the ones provided and get my approval.
-The specification doesn't have to be bulletproof.
-But it must contain a bullet list of goals (with points to score) at the bottom which can be checked / evaluated.
+While you are free to come up with a topic for this assignment, doing so requires you to put together a specification similar to the ones provided and get my approval.
+The specification doesn't have to be bulletproof, but it must contain a bullet list of goals (with points to score) at the bottom which can be checked / evaluated.
 You can also adjust one of the provided specifications.
 
 You are required to work in teams, and the team size has to correspond to the amount of work (features and their complexity) of the topic.
-The provided specifications correspond to a team size of 3.
+The provided specifications correspond to a team size of **3**, which is also the preferred size.
 
 You are allowed to use:
 - C++ standard library
@@ -25,7 +23,7 @@ You are allowed to use:
 - [ImGui](https://github.com/ocornut/imgui)
 - [ncurses](https://invisible-island.net/ncurses/)
 - [OpenAL](https://openal.org/)
-- [nlohmann/json](https://github.com/nlohmann/json) / [RapidJSON](https://rapidjson.org/)
+- [Glaze](https://github.com/stephenberry/glaze) / [nlohmann/json](https://github.com/nlohmann/json) / [RapidJSON](https://rapidjson.org/)
 - [RapidYAML](https://github.com/biojppm/rapidyaml)
 - [Assimp](https://www.assimp.org/)
 - [stb-image](https://github.com/nothings/stb/blob/master/stb_image.h)
@@ -44,28 +42,31 @@ You are allowed to use:
 - [protobuf](https://github.com/protocolbuffers/protobuf)
 - [Font Chef](https://github.com/mobius3/font-chef)
 
-Feel free to ask me about other libraries / tools.
+Feel free to ask me about other libraries / tools, in most cases that should not be a problem.
+However, I will **not** approve full game engines for game projects, as the architecture design and implementation of the engine is a core learning outcome.
 
 Your application should work on Linux (64-Bit) and Windows (64-Bit), unless there is a specific reason why it cannot be cross-platform.
 
 Some fixed constraints (you **must** adhere to these):
- * Use git for version control.
+ * Use git for version control; the full git history must remain available.
  * Use [CMake](https://cmake.org/) as the build system.
  * Use [ClangFormat](https://clgitang.llvm.org/docs/ClangFormat.html) to automatically format your code using the provided [`.clang-format`](../.clang-format) configuration.
  * Use [vcpkg](https://vcpkg.io) for package management.
+ * Follow the **AI Policy** outlined in the lecture introduction. 
 
 ## Team Composition + Specification
 
 Send me an email with your team composition and your specification as early as possible.
-Use the following link:
+Use the following link and subject line:
 
 📧 [send email](mailto:peter.thoman@uibk.ac.at?subject=703333%20-%20Assignment%20Team%20Composition)
 
 ## Submission
 
-Submission works by giving me access to your git repository, and **tagging a version**.
-Include the tag I should check with each submission.
-If your git repo is private, include an invitation with your email.
+Submission works by giving me access to your **git repository**, and **tagging a version**.
+**Include the tag I should check with each submission in your email.**
+If your git repo is private, **include an invitation with your email.**
+Ensure that your repo is and remains accessible for at least 2 weeks after the submission date.  
 
 ### Build Test Submission
 
@@ -81,7 +82,7 @@ Use the following link, again replacing `XX` with your team number.
 Verify that the tagged version is working.
 Use the following link, again replacing `XX` with your team number.
 
-Include your specification in the package, even if it was initially provided with the course material.
+Include your specification in the repo, even if it was initially provided with the course material.
 Also include a file **contributions.md** that succinctly lists, for each team member, their core contributions, with file references for the top 3.
 E.g.:
 
